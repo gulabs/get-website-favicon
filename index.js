@@ -1,7 +1,5 @@
-'use strict'
+const getWebsiteFavicon = require('./lib');
 
-const getWebsiteFavicon = require("./lib");
-
-module.exports = async (url, options)=>{
-    return await getWebsiteFavicon(url)
-}
+module.exports = async (url) => {
+  return await getWebsiteFavicon(url);
+};
